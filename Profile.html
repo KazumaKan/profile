@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        } body {
+            /* backgroud */ 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #c7d8ee;
+        } .profile-container {
+            /* Main box */
+            width: 210mm;
+            height: 230mm;
+            background-color: #f6f6f1;
+            padding: 20mm;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden; /* Prevent content overflow */
+        } 
+        /* Profile picture */
+        .profile-header {
+            text-align: center;
+            margin-bottom: 20px;
+        } .profile-header img {
+            width: 175px;
+            height: 190px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }.profile-header h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        /*  */
+        .profile-section {
+            margin-bottom: 20px;
+        }.profile-section h3 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #3f3f3f;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }.profile-section p {
+            font-size: 14px;
+            color: #3f3f3f;
+            line-height: 1.6;
+        } 
+
+        /* Github */
+        .img {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        } .img img {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Contact information */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font-size: 14px;
+            color: #3f3f3f;
+        } /* Print styles */
+        @media print {
+            body {
+                display: block;
+                background-color: white;
+            }
+            .profile-container {
+                box-shadow: none;
+                margin: 0;
+                padding: 20mm;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Show Main box & Profile picture -->
+    <div class="profile-container">
+        <div class="profile-header">
+            <!-- Profile My picture -->
+            <img src="https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/355844439_817173529904431_7911299396103313914_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEuaGu1wABe-2eMPH9BQfyOB5TX9QsAE48HlNf1CwATj_dNXx0L6MFHUnI3BPGaqu8r5cqkXEGHUz6xgwkbMs0g&_nc_ohc=d9QmPI9rZJYQ7kNvgGc9f65&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=A2xKEUm_3CIucBSOANXZx0P&oh=00_AYAeu7shFGEyYm7ozzMV81l-L38y0F0xhkopJYok3cTqnw&oe=672E1721">
+            <h1> Sittinon Likitkajornchai</h1>
+        </div>
+        
+        <div class="profile-section">
+            <h3>Profile </h3>
+            <p>Age : 21 years <br> Date of birth : 24 October 2003 <br> Sex : Male </p>
+        </div>
+        
+        <div class="profile-section">
+            <h3>Education </h3>
+            <p>Bachelor Degrees : Bachelor of Engineering (Computer Engineering) in Sripatum University</p>
+        </div>
+        
+        <div class="profile-section">
+            <h3>Hobby</h3>
+            <p>Drawing, Play game as Play chess</p>
+        </div>
+        
+        <div class="profile-section">
+            <h3>Dream career</h3>
+            <p>I don't have any dreams yet. I don't know what I'm good at or what I particularly like.</p>
+        </div>
+        
+        <div class="profile-section">
+            <h3>Contact</h3>
+            <div class="contact-info">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1200px-2021_Facebook_icon.svg.png" alt="facebook">
+                    <p>Facebook : Sittinon Likitkajornchai </p>
+                </div>
+
+                <div class="img">
+                    <img src="https://static-00.iconduck.com/assets.00/brand-github-icon-512x499-0g9lxyvj.png" alt="Github">
+                    <p>Github : KazumaKan </p>
+                </div>
+
+                <div class="img">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Linkedin">
+                    <p>Linkedin : Sittinon Likitkajornchai </p>
+                </div>
+
+                <div class="img">
+                    <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt="Email">
+                    <p>Email : ssitinan@gmail.com, sittinon.lik@spumail.net </p>
+                </div>
+
+                <div>📞 Telephone : 083-003-6919</div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
